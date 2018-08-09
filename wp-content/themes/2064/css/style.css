@@ -1,0 +1,88 @@
+.scene{
+
+  display: block;
+  max-width: 1200px;
+  overflow:hidden;
+  padding: 0;
+  margin: 0 auto;
+  list-style:none;
+  position: relative;
+
+}
+
+.layer {
+  display: block;
+
+  max-width: 1200;
+  overflow:hidden;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+   background-repeat: no-repeat;
+}
+
+
+.layer img{
+
+	width:100%;
+}
+
+.header{
+	background-image:url(./rombg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-bottom:8px solid #000;
+
+}
+	.header .container{
+		position: relative;
+	}
+	.header .nav{
+		height:85px;
+		width:100%;
+		position: absolute;
+		background:#f8f4f1;
+		border-bottom:8px solid #000;
+	}
+		.header .logo{
+			float:right;
+			margin-top:10px;
+			width:64px;
+			height:55px;
+			background:url(./midboss.png) no-repeat;
+			text-indent: -9999px;
+            display:block;
+            position:absolute;
+            right: 0;
+            z-index:100;
+		}
+
+.rombrush{
+
+}
+.romlogo{
+
+}
+.romlexi{
+ margin-top:10px;
+}
+.romturing{
+ margin-top:10px;
+}
+
+.container{
+	max-width: 68em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 1.618em;
+	padding-left: 1.618em;
+}
+
+.separate-containers .site-main{
+    margin-top: 0;
+    padding-top: 0;
+}
+.separate-containers .inside-article, .separate-containers .widget, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation {
+    padding-top: 9px;
+}
+

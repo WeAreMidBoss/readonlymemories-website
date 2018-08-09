@@ -1,0 +1,547 @@
+/*
+Theme Name: 2064: Read Only Memories
+Theme URI: http://readonlymemori.es
+Author: Thomas Usborne
+Author URI: http://edge22.com
+Description: GeneratePress is a lightweight HTML5 and CSS3 framework that allows anyone to create a completely unique website right before their eyes. Adjusting the layout and colors of your website couldn't be easier, simply use our options in the Customize section of the Dashboard and watch the changes happen. GeneratePress is mobile responsive, W3C Markup Validated, Schema.org microdata integrated, search engine friendly, cross browser compatible and 100% translatable. GeneratePress has 8 widget areas, 5 navigation positions, 5 sidebar layouts and much more. Available in English and German/Deutsch! See more at http://generatepress.com
+Template: generatepress
+Version: 1.1.3
+Text Domain: generate
+Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, fluid-layout, fixed-layout, responsive-layout, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, light, white, dark, black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, yellow
+*/
+
+@import url("./../generatepress/style.css");
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('./fonts/BebasNeue-webfont.eot');
+    src: url('./fonts/BebasNeue-webfont.eot#iefix') format('embedded-opentype'),
+         url('./fonts/BebasNeue-webfont.woff') format('woff'),
+         url('./fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('./fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+blockquote {
+    border: none;
+    padding: 0;
+    font-style: normal;
+}
+
+body, html{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+a {
+	color:#d3225e;
+}
+
+a:visited{
+	color:#d3225e;
+	text-decoration: none;
+}
+
+a:active{
+	color:#b4194d;
+	text-decoration: none;
+}
+
+a:focus{
+text-decoration:none;
+}
+
+a:hover{
+	color:#b4194d;
+	text-decoration: none;
+}
+
+.main-nav a{
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 25px;
+	color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	/*font-family: Roboto;
+	font-weight: 700;*/
+	font-family: 'bebas_neueregular';
+}
+
+h1 {
+	font-size: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h2 {
+	font-size: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+h3 {
+	font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+p {
+	font-size: 16px;
+}
+
+.blog .entry-title a{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 35px;
+	color:#d3225e;
+}
+
+.blog .entry-title a:hover{
+	color:#b4194d;
+	text-decoration: none;
+}
+
+
+.blog .entry-meta{
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.inside-header{
+	position:relative;
+	/*height:155px; */
+	padding:0;
+}
+.inside-navigation{
+	position: relative;
+}
+.main-title{
+
+}
+.main-title a{
+	position:absolute;
+	background:url(./images/midbosslogo2.png) no-repeat;
+	/*height:198px;*/
+	width:280px;
+	top:10px;
+	text-indent: -99999px;
+	left: 0;
+}
+
+.site-description{
+	text-indent: -99999px;
+	display:none;
+}
+.ticket{
+	display:none;
+	/*background:url(./images/kickstarter.png) no-repeat;
+	width:183px;
+	height:57px;
+	position:absolute;
+	display:block;
+	text-indent: -9999px;
+	right:20px;
+	top:47px;*/
+}
+
+.navbar{
+	min-height: 0;
+}
+.icon-bar{
+	background:#FFF;
+}
+/*
+.navbar-static-top .navbar-nav.navbar-right:last-child{
+	margin-right:40px;
+}
+
+.navbar-static-top button:hover{
+	background-color:#c61a56;
+}
+
+.navbar-static-top{
+	background:#d3225e;
+	border-top:6px solid #231f20;
+	margin-bottom:0;
+	font-family: Roboto;
+	font-weight: 300;
+
+}
+.navbar-static-top .nav{
+	margin-left:20px;
+}
+
+.navbar-static-top a{
+	color:#FFF;
+}
+.navbar-static-top .nav li a:hover{
+	background-color:#c61a56;
+}
+
+.navbar-static-top .nav li a:focus{
+	background-color:#c61a56;
+}
+
+.navbar-static-top .navbar-right li{
+	padding-top:7px;
+	padding-left:15px;
+}
+
+.navbar-static-top .nav a{
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+.navbar-static-top .facebook,
+.navbar-static-top .twitter,
+.navbar-static-top .youtube,
+.navbar-static-top .google,
+.navbar-static-top .rss{
+	width:24px;
+	height:24px;
+	display:block;
+	text-indent: -9999px;
+	background:url(./images/facebook.png) no-repeat center center;
+}
+
+
+.navbar-static-top .facebook{background-image:url(./images/facebook.png);}
+.navbar-static-top .twitter{background-image:url(./images/twitter.png);}
+.navbar-static-top .youtube{background-image:url(./images/youtube.png);}
+.navbar-static-top .google{background-image:url(./images/gplus.png);}
+.navbar-static-top .rss{background-image:url(./images/rss.png);}
+*/
+
+.site-info{
+	padding-top:30px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.site-info .copyright{
+	float:left;
+	text-align: left;
+}
+.site-info ul.social{
+	float:right;
+	margin:0;
+	margin-bottom: 30px;
+}
+.site-info .social li{
+	float:left;
+	margin-left:20px;
+}
+.site-info .social a{
+
+}
+
+.site-info .facebook,
+.site-info .twitter,
+.site-info .presskit,
+.site-info .linkedin,
+.site-info .google,
+.site-info .midboss,
+.site-info .rss,
+.site-info .tumblr{
+	width:43px;
+	height:43px;
+	display:block;
+	text-indent: -9999px;
+	background:url(./images/facebook4.png) no-repeat center center;
+
+}
+
+
+.site-info .facebook{background-image:url(./images/facebook4.png);}
+.site-info .twitter{background-image:url(./images/twitter4.png);}
+.site-info .presskit{background-image:url(./images/presskit4.png);}
+.site-info .midboss{background-image:url(./images/midboss.png);}
+.site-info .linkedin{background-image:url(./images/linkedin4.png);}
+.site-info .google{background-image:url(./images/gplus4.png);}
+.site-info .rss{background-image:url(./images/rss4.png);}
+.site-info .tumblr{background-image:url(./images/tumblr.png);}
+
+
+.home .entry-header, .page-id-1438  .entry-header,.page-id-1433  .entry-header,.page-id-302 .entry-header{
+	display:none;
+}
+.home .site-main,.home .inside-article{
+	padding-top:0;
+}
+
+/*.home .entry-content iframe{
+border:10px solid #222222;
+}*/
+
+.blog .entry-title a{
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 35px;
+	color:#d3225e;
+}
+
+.columns3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.sponsors img{
+    padding:0 20px 40px 0;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsors h2{
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 60px;
+    line-height: 50px;
+    color:#d3225e;
+    text-align: left;
+}
+
+.copyright{
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.social {
+    padding-right: 30px;
+    list-style:none;
+}
+
+.navbar-static-top{
+	display:none;
+}
+
+.site-header{
+	background-color:#231f20;
+}
+
+.menu-toggle{
+text-align:right;
+}
+
+@media screen and (max-width: 767px) {
+
+	.nav-float-right .main-navigation {
+		float: none;
+	}
+
+	.site-info .social li {
+  float: none;
+  margin:0;
+  padding: 0 5px;
+  display: inline-block;
+		}
+
+	.site-info ul.social {
+  float: none;
+  text-align: center;
+  padding-right: 0;
+	}
+
+	.site-info .copyright {
+float:none;
+text-align: center;
+display: block;
+padding-left: 0;
+}
+
+.main-title a {
+	width: 224px;
+}
+
+.nav-float-right .main-navigation {
+  margin-bottom: 5px;
+}
+
+.menu-toggle {
+margin-top:5px;
+}
+
+	}
+
+.sf-menu > li{
+text-align:center;
+}
+
+#slider-box{
+	margin-bottom: 10px;
+}
+
+#wrap-demo {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#content-demo {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+#gallery-3 img {
+    border: 0px !important;
+}
+
+#gallery-4 img {
+    border: 0px !important;
+}
+
+.buttons{
+    font-family: 'bebas_neueregular';
+    font-size: 40px;
+}
+
+.header-2064{
+    width:100%;
+    height:38.1127451vw;
+    position: relative;
+    overflow:hidden;
+}
+.header-background{
+    width:100%;
+    height:100%;
+    background-image:url(./2064/ibackground.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.header-tv{
+    width:100%;
+    height:100%;
+    background-image:url(./2064/TVs.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.header-logo{
+    width:100%;
+    height:100%;
+    background-image:url(./2064/logo.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    left: -10px!important;
+}
+
+.header-lexi{
+
+    width:100%;
+    height:100%;
+    background-image:url(./2064/lexi.png);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:contain;
+    left: -10px!important;
+}
+
+.header-jess{
+
+    width:100%;
+    height:100%;
+    background-image:url(./2064/jess.png);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:contain;
+    left: -10px!important;
+}
+
+.header-tomcat{
+
+    width:100%;
+    height:100%;
+    background-image:url(./2064/tomcat.png);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.header-turing{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image:url(./2064/turing.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    left: 10px!important;
+}
+
+.header-2064 ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.header-2064 li{
+    margin:0;
+    padding:0;
+}
+
+.full-width-image{
+height: 21.4767157vw;
+}
+.full-width-image img{
+position:absolute;
+left:0;
+}
+
+body, .header .nav, .inside-article, .comments-area, .page-header, .one-container .container, .paging-navigation, .inside-page-header{
+    background-color: #fff !important;
+}
+
+h1, h2 {
+color: #14256c;
+    }
+
+.site-info {
+    background-color: #14256c !important;
+}
+
+.parentturing{
+display:none;
+background-color:#14256c;
+color:#fff;
+font-size:16px;
+padding: 8px 4px 4px 4px;
+position: fixed;
+bottom: 0;
+right:30px;
+width:300px;
+}
+
+.titlebar{
+ cursor: pointer;
+ padding-bottom: 4px;
+}
+
+.contentturing{
+background-color:#fff;
+height:460px;
+overflow:hidden;
+}
+
+.page-id-111  .entry-title {display: none;}
+
+.logos img{
+margin:0 10px;
+}
+

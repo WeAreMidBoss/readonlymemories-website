@@ -1,0 +1,118 @@
+<html>
+<head>
+<style>
+body, html{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+.header{
+	width:100%;
+	height:38.1127451vw;
+	position: relative;
+	overflow:hidden;
+}
+.header-background{
+	width:100%;
+	height:100%;
+	background-image:url(ibackground.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.header-tv{
+	width:100%;
+	height:100%;
+	background-image:url(TVs.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.header-logo{
+	width:100%;
+	height:100%;
+	background-image:url(logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	left: -10px!important;
+}
+
+.header-lexi{
+
+	width:100%;
+	height:100%;
+	background-image:url(lexi.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+	left: -10px!important;
+}
+
+.header-jess{
+
+	width:100%;
+	height:100%;
+	background-image:url(jess.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+	left: -10px!important;
+}
+
+.header-tomcat{
+
+	width:100%;
+	height:100%;
+	background-image:url(tomcat.png);
+	position: absolute;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.header-turing{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-image:url(turing.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	left: 10px!important;
+}
+
+.header ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.header li{
+	margin:0;
+	padding:0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<ul id="scene" class="header-background" data-origin-y="1.0">
+<li class="layer header-tv" data-depth="0.015"></li>
+<li class="layer header-tomcat" data-depth="0.015"></li>
+<li class="layer header-jess" data-depth="0.02"></li>
+<li class="layer header-lexi" data-depth="0.025"></li>
+<li class="layer header-turing" data-depth="0.03"></li>
+<li class="layer header-logo" data-depth="0.015"></li>
+</ul>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.parallax.min.js"></script>
+<script>
+$(function(){
+	$('#scene').parallax({clipRelativeInput:true,relativeInput:true,scalarY:3});
+});
+</script>
+
+
+</body>
+</html>
